@@ -28,41 +28,44 @@ module.exports = {
         sans: ['GivonicVariable'],
       },
       colors: {
-        primary: colors.teal,
-        gray: colors.neutral,
+        white: '#ffffff',
+        cream: '#F5F5F5',
+        mocca300: '#131313',
+        mocca200: '#191919',
+        mocca100: '#222222',
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.mocca200'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.teal.500'),
               '&:hover': {
-                color: `${theme('colors.primary.600')} !important`,
+                color: `${theme('colors.teal.500')} !important`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.white') },
             },
             h1: {
               fontWeight: '616',
-              color: theme('colors.gray.900'),
+              color: theme('colors.mocca300'),
             },
             h2: {
               fontWeight: '400',
-              color: theme('colors.gray.900'),
+              color: theme('colors.mocca300'),
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.900'),
+              color: theme('colors.mocca300'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.900'),
+              color: theme('colors.mocca300'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.800'),
+              backgroundColor: theme('colors.mocca300'),
             },
             code: {
               color: theme('colors.pink.500'),
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.mocca100'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -93,8 +96,8 @@ module.exports = {
             },
             strong: { color: theme('colors.gray.600') },
             blockquote: {
-              color: theme('colors.gray.900'),
-              borderLeftColor: theme('colors.gray.200'),
+              color: theme('colors.mocca300'),
+              borderLeftColor: theme('colors.mocca100'),
             },
           },
         },
@@ -102,39 +105,39 @@ module.exports = {
           css: {
             color: theme('colors.gray.300'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.teal.500'),
               '&:hover': {
-                color: `${theme('colors.primary.400')} !important`,
+                color: `${theme('colors.teal.500')} !important`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.teal.500') },
             },
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.800'),
+              backgroundColor: theme('colors.mocca300'),
             },
             code: {
-              backgroundColor: theme('colors.gray.800'),
+              backgroundColor: theme('colors.mocca300'),
             },
             details: {
-              backgroundColor: theme('colors.gray.800'),
+              backgroundColor: theme('colors.mocca300'),
             },
-            hr: { borderColor: theme('colors.gray.700') },
+            hr: { borderColor: theme('colors.mocca200') },
             'ol li::marker': {
               fontWeight: '600',
               color: theme('colors.gray.400'),
@@ -150,12 +153,12 @@ module.exports = {
             },
             tbody: {
               tr: {
-                borderBottomColor: theme('colors.gray.700'),
+                borderBottomColor: theme('colors.mocca200'),
               },
             },
             blockquote: {
               color: theme('colors.gray.100'),
-              borderLeftColor: theme('colors.gray.700'),
+              borderLeftColor: theme('colors.mocca200'),
             },
           },
         },

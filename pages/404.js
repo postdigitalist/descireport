@@ -18,7 +18,7 @@ export default function FourZeroFour() {
           </p>
           <p className="mb-8">Pero no te preocupes, puedes volver al inicio.</p>
           <Link href="/">
-            <button className="focus:shadow-outline-blue inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500">
+            <button className="inline border border-transparent bg-cream px-4 py-2 text-sm font-bold leading-5 text-mocca200 transition-colors duration-150 hover:border-cream hover:bg-mocca100 hover:text-cream dark:hover:bg-mocca100">
               Llevame de vuelta
             </button>
           </Link>
