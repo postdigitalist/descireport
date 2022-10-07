@@ -56,7 +56,7 @@ const NewsletterForm = ({ title = 'Recibe las últimas novedades de DeSci todas 
         </div>
         <div className="mt-2 flex w-full rounded-md shadow-sm sm:mt-0 sm:ml-3">
           <button
-            className={`w-full  border border-transparent bg-mocca200 py-2 px-4 font-bold text-white hover:border-teal-500 hover:text-teal-500 sm:py-0 ${
+            className={`w-full  border border-transparent bg-cream py-2 px-4 font-bold text-mocca200 hover:border-teal-500 hover:text-teal-500 dark:bg-mocca200 dark:text-white sm:py-0 ${
               subscribed ? 'cursor-default' : 'hover:bg-primary-700 dark:hover:bg-primary-400'
             } focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:ring-offset-black`}
             type="submit"
