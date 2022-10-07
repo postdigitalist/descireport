@@ -25,7 +25,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        sans: ['GivonicVariable'],
       },
       colors: {
         primary: colors.teal,
@@ -43,13 +43,11 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             h1: {
-              fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
+              fontWeight: '616',
               color: theme('colors.gray.900'),
             },
             h2: {
-              fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
+              fontWeight: '400',
               color: theme('colors.gray.900'),
             },
             h3: {
