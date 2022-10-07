@@ -38,6 +38,7 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.mocca200'),
+            bg: theme('colors.white'),
             a: {
               color: theme('colors.teal.500'),
               '&:hover': {
@@ -79,7 +80,7 @@ module.exports = {
               content: 'none',
             },
             details: {
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.cream'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -103,7 +104,8 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.white'),
+            bg: theme('colors.mocca100'),
             a: {
               color: theme('colors.teal.500'),
               '&:hover': {
@@ -140,15 +142,15 @@ module.exports = {
             hr: { borderColor: theme('colors.mocca200') },
             'ol li::marker': {
               fontWeight: '600',
-              color: theme('colors.gray.400'),
+              color: theme('colors.cream'),
             },
             'ul li::marker': {
-              backgroundColor: theme('colors.gray.400'),
+              backgroundColor: theme('colors.cream'),
             },
-            strong: { color: theme('colors.gray.100') },
+            strong: { color: theme('colors.cream') },
             thead: {
               th: {
-                color: theme('colors.gray.100'),
+                color: theme('colors.cream'),
               },
             },
             tbody: {
@@ -157,7 +159,7 @@ module.exports = {
               },
             },
             blockquote: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.cream'),
               borderLeftColor: theme('colors.mocca200'),
             },
           },
