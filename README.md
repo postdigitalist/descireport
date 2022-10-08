@@ -1,6 +1,7 @@
 ![DeSci Report banner](/public/static/images/twitter-card.png)
 
-#DeSciReport
+# DeSciReport
+
 Un blog para el newsletter de DeSci en español.
 
 ## Stack

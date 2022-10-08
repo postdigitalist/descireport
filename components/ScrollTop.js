@@ -23,7 +23,7 @@ const ScrollTop = () => {
       className={`fixed right-8 bottom-8 hidden flex-col gap-3 ${show ? 'md:flex' : 'md:hidden'}`}
     >
       <button
-        aria-label="Scroll To Top"
+        aria-label="Volver arriba"
         type="button"
         onClick={handleScrollTop}
         className=" bg-cream p-2 text-mocca100 transition-all hover:bg-gray-300 dark:bg-mocca100 dark:text-gray-400 dark:hover:text-cream"
