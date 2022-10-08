@@ -20,7 +20,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-mocca200 dark:text-cream sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Archivo
           </h1>
           <div className="relative max-w-lg">
@@ -29,7 +29,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Explora el archivo"
-              className="block w-full border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-teal-500 focus:ring-teal-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
+              className="block w-full border border-gray-300 bg-white px-4 py-2 text-mocca200 focus:border-teal-500 focus:ring-teal-500 dark:border-mocca200 dark:bg-mocca100 dark:text-cream"
             />
             <svg
               className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
@@ -47,7 +47,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             </svg>
           </div>
         </div>
-        <ul>
+        <ul className="pt-4">
           {!filteredBlogPosts.length && 'Oops, no encontramos ninguna entrada'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -63,7 +63,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                        <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                        <Link href={`/blog/${slug}`} className="text-mocca200 dark:text-cream">
                           {title}
                         </Link>
                       </h3>

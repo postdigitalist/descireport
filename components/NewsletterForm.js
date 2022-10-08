@@ -24,23 +24,23 @@ const NewsletterForm = ({ title = 'Recibe las últimas novedades de DeSci todas 
     const { error } = await res.json()
     if (error) {
       setError(true)
-      setMessage('Your e-mail address is invalid or you are already subscribed!')
+      setMessage('Tu correo es inválido - o ya te has suscripto')
       return
     }
 
     inputEl.current.value = ''
     setError(false)
     setSubscribed(true)
-    setMessage('Successfully! 🎉 You are now subscribed.')
+    setMessage('🎉 ¡Ya te has suscripto! Revisa tu casilla de correo 👀')
   }
 
   return (
-    <div className="mt-6 flex w-full flex-col items-center justify-center bg-mocca100 px-16 py-24 text-center">
-      <div className="pb-6 text-3xl font-bold text-gray-100">{title}</div>
+    <div className="mt-6 flex w-full flex-col items-center justify-center bg-mocca100 px-16 py-16 text-center lg:py-24">
+      <div className="pb-6 text-xl font-bold text-gray-100 lg:text-3xl">{title}</div>
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
         <div>
           <label className="sr-only" htmlFor="email-input">
-            Email address
+            Dirección de correo electrónico
           </label>
           <input
             autoComplete="email"
